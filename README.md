@@ -1,6 +1,6 @@
 Spatial Machine Learning for Land Cover Classification using SVM
 Project Overview
-This project applies a Support Vector Machine (SVM) model to classify land cover types in a rural area of Indonesia using Sentinel-1 SAR backscatter data (VV/VH) extracted via Google Earth Engine. The pipeline covers the full workflow from data extraction to model evaluation, achieving an overall classification accuracy of 77.74%.
+This project applies a Support Vector Machine (SVM) model to classify land cover types in a rural area of Indonesia using Sentinel-1 SAR backscatter data (VV/VH) extracted via Google Earth Engine. The pipeline covers the full workflow from data extraction to model evaluation, achieving an overall classification accuracy of 77.27%.
 Tech Stack
 
 Python — core programming language
@@ -19,7 +19,7 @@ Repository Structure
 └── README.md
 Key Insights
 
-The model achieved 77.74% overall accuracy, with the strongest performance on the Hutan (Forest) and Sawah (Paddy Field) classes, which have the most distinct VV/VH backscatter signatures.
+The model achieved 77.27% overall accuracy, with the strongest performance on the Hutan (Forest) and Sawah (Paddy Field) classes, which have the most distinct VV/VH backscatter signatures.
 The main source of misclassification was overlap between Pemukiman (Settlement) and Lahan Terbuka (Open Land), since both classes can produce similar backscatter intensity when vegetation cover is sparse.
 Feature engineering — particularly the VV/VH ratio and normalized difference — improved class separability beyond using raw backscatter values alone.
 Hyperparameter tuning via GridSearchCV identified the RBF kernel as consistently outperforming the linear kernel, confirming non-linear separability among land cover classes in the SAR feature space.
